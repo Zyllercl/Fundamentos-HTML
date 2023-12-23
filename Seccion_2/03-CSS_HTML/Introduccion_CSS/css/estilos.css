@@ -1,0 +1,21 @@
+h1 {
+    color:brown;
+}
+p {
+    color: black;
+    background-color: pink;
+    /*  propiedad o relleno que se crea alrededor del contenido de un elemento */
+    padding: 15px; 
+    /* permite definir en una única regla todos los bordes de los elementos seleccionados  */
+    border: 10px solid powderblue; 
+    /* Establece los márgenes de un elemento (Superior - Derecha - Izquierda - Abajo) */
+    /* Orden de margin
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20%;
+    margin-left: 10px; 
+            SUPERIOR  DERECHA  ABAJO   IZQUIERDA 
+    margin:   40px     10px     20px    10px; */
+    margin: auto 50px;
+    text-align: center;
+}
