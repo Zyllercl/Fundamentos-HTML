@@ -1,0 +1,16 @@
+h1 {
+    color: violet; 
+}
+
+a:link, a:visited {
+    background-color: #b5179e;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; /* Permite que no se encimen los bloques */
+}
+
+a:hover, a:active {
+    background-color: #f72585;
+}

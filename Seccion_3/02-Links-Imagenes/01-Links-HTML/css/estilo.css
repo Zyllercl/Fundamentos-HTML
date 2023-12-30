@@ -1,0 +1,25 @@
+h1 {
+    color: burlywood; 
+}
+
+/* Color Link por default (Cuando aun no se hace click) */
+a:link {
+    color: red;
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+/* Color Link cuando ya se le ha hecho click */
+a:visited {
+    color: darkcyan;
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+/* Color cuando se coloca el cursor encima del Link */
+a:hover {
+    color: blueviolet;
+}
+
+/* Cambia el color cuando se hace click en el Link */
+a:active {
+    color: darkgreen;
+}
