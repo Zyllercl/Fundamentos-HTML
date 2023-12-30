@@ -1,0 +1,29 @@
+
+h1 {
+    color: darkcyan;
+}
+
+ul {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    background-color: #457b9d;
+    overflow: hidden; /* Permite mostrar la lista de manera independiente */
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left; /* Mostrar el navbar horizontal */
+}
+
+/* Links que estan dentro de un elemento LI */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #1d3557;
+}
