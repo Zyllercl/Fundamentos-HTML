@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Seccion 7</title>
+</head>
+<body>
+    <h1 class="titulo_principal">Formulario en HTML</h1>
+    <!-- 
+        Argumentos dentro del FORM
+        action          -> Define la ruta del servidor
+        target          -> Redireccion al momento de enviar el formulario
+                            _self (Recarga la misma pagina)
+                            _blank (Abre una pestaña nueva)
+        autocomplete    ->  Sugerencia de autocompletado de formulario 'on' 'off'
+     -->
+    <form action="mi_servidor" autocomplete="off" >
+        <!-- Fieldset permite agregar un marco a todo el formulario -->
+        <fieldset>
+            <!-- Titulo del marco agregado -->
+            <legend>Formulario Registro</legend>
+
+            <!-- Formulario - ID -->
+            <label for="id">ID Persona</label> <br>
+            <!-- El atributo disabled no se envia al servidor -->
+            <input type="text" id="id" name="id" readonly="true" value="100" disabled="true"/><br>
+
+            <!-- Envio de data directamente al servidor -->
+            <input type="hidden" id="sistema" name="sistema" value="SAP">
+
+            <!-- Formulario - Nombre -->
+            <label for="nombre">Nombre</label> <br>
+            <!-- Si el campo es obligatorio, agregar 'required' -->
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" /> <br>
+
+            <!-- Formulario - Apellido -->
+            <label for="apellido">Apellido</label> <br>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" /> <br>
+
+            <!-- Formulario - Correo -->
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" ><br>
+
+            <!-- Formulario - Edad -->
+            <label for="edad">Edad</label><br>
+            <!-- Para agregar numeros flotantes agregar step='any' -->
+            <input type="number" id="edad" name="edad"><br>
+
+            <!-- Creacion de Radio Button -->
+            <label>Genero</label><br>
+            <!-- Para seleccionar solo un Checkbox se debe agregar el mismo nombre en el campo name en los dos input -->
+            <!-- El valor que se enviara como peticion POST para la base de datos esta denominado en el campo value='' -->
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label><br>
+
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+
+            <!-- Creacion de Checkbox -->
+            <label>Musica Favorita</label><br>
+            <input type="checkbox" id="clasica" name="musica" value="clasica">
+            <label for="clasica">Clasica</label><br>
+
+            <input type="checkbox" id="rock" name="musica" value="rock">
+            <label for="rock">Rock</label><br>
+
+            <input type="checkbox" id="indie" name="musica" value="indie">
+            <label for="indie">Indie</label><br>
+            
+            <!-- Creacion de Select -->
+            <label for="autos">Marca de auto favorita</label><br>
+            <!-- Para seleccionar mas de un elemento se debe agregar multiple='true' -->
+            <select name="autos" id="autos">
+                <option selected="true">Selecciona una marca</option>
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+            </select><br>
+
+            <!-- Creacion de TextArea -->
+            <label for="comentario">Comentario</label><br>
+            <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea><br>
+
+            <!-- Boton de enviar formulario -->
+            <input type="submit" value="Enviar" />
+
+            <!-- Boton de enviar formulario no validado -->
+            <!-- <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar"> -->
+
+            <!-- Resetear formulario -->
+            <input type="reset" value="Limpiar">
+        </fieldset>
+    </form>
+</body>
+</html>
